@@ -12,17 +12,17 @@ In point 3, focus on the difference between the distribution of a large collecti
 
 As a motivating example, compare the distribution of 1000 random uniforms
 
-    ```R
-    hist(runif(1000))
-    ```
+```R
+hist(runif(1000))
+```
 
 and the distribution of 1000 averages of 40 random uniforms  
 
-    ```R
-    mns = NULL
-    for (i in 1 : 1000) mns = c(mns, mean(runif(40)))
-    hist(mns)
-    ```
+```R
+mns = NULL
+for (i in 1 : 1000) mns = c(mns, mean(runif(40)))
+hist(mns)
+```
 
 This distribution looks far more Gaussian than the original uniform distribution!  
 
